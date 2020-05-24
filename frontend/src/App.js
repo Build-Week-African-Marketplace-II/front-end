@@ -10,17 +10,15 @@ function App() {
     <Router>
       <div>
         <ul>
-          <li>
-            <Link to="/LogIn">Log In</Link>
-            <Link to="/SignUp">Sign Up</Link>
-          </li>
+          <li><Link to="/SignUp">Sign Up</Link></li>
+          <li><Link to="/LogIn">Log In</Link></li>
         </ul>
         <Switch>
-          <Route exact path="/LogIn">
-            <LogIn />
-          </Route>
           <Route exact path="/SignUp">
             <SignUp />
+          </Route>
+          <Route exact path="/LogIn">
+            <LogIn />
           </Route>
         </Switch>
       </div>
